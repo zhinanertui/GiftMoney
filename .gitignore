@@ -1,4 +1,7 @@
-!/.idea/
-!/server/target/
-!/web/dist/
-!/web/node_modules/
+/.idea
+/server/target/
+/web/dist/
+/web/node_modules/
+
+
+
