@@ -1,0 +1,4 @@
+!/.idea/
+!/server/target/
+!/web/dist/
+!/web/node_modules/

@@ -1,0 +1,64 @@
+/* ============================================
+   科技蓝主题：主色调、侧边栏配色、全局背景
+   在 element-plus 样式之后引入
+   ============================================ */
+
+:root {
+  /* 科技蓝主色（Element 经典 #409EFF） */
+  --el-color-primary: #409eff;
+  --el-color-primary-light-3: #79bbff;
+  --el-color-primary-light-5: #a0cfff;
+  --el-color-primary-light-7: #c6e2ff;
+  --el-color-primary-light-8: #d9ecff;
+  --el-color-primary-light-9: #ecf5ff;
+  --el-color-primary-dark-2: #337ecc;
+
+  /* 侧边栏深蓝配色 */
+  --sidebar-bg: #16213e;
+  --sidebar-bg-deep: #111a33;
+  --sidebar-text: #9aa8c0;
+  --sidebar-active-bg: #409eff;
+  --sidebar-active-text: #ffffff;
+
+  /* 内容区背景 */
+  --app-bg: #f0f4f8;
+
+  /* 品牌渐变 */
+  --brand-gradient: linear-gradient(135deg, #409eff 0%, #2b5fd9 100%);
+}
+
+body {
+  background: var(--app-bg);
+}
+
+/* ============ 响应式适配 ============ */
+@media (max-width: 768px) {
+  /* 弹窗自适应宽度 */
+  .el-dialog {
+    width: 92% !important;
+    max-width: 92vw;
+  }
+  /* 消息提示不超屏 */
+  .el-message {
+    min-width: auto;
+    max-width: 88%;
+  }
+  /* 卡片头部工具栏换行 */
+  .card-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  /* 搜索栏表单换行 */
+  .el-form--inline .el-form-item {
+    margin-right: 12px;
+  }
+  /* 分页居中换行 */
+  .el-pagination {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+}

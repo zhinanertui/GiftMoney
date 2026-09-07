@@ -1,0 +1,112 @@
+/* ============================================
+   圆润风格：覆盖 Element Plus 默认圆角与阴影
+   在 element-plus 样式之后引入
+   ============================================ */
+
+:root {
+  --el-border-radius-base: 8px;
+  --el-border-radius-small: 6px;
+  --el-border-radius-round: 24px;
+  --el-font-size-base: 14px;
+}
+
+/* 卡片：无边框 + 更大圆角 + 柔和阴影 */
+.el-card {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+.el-card.is-hover-shadow:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.el-card__header {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f2f5;
+  font-weight: 600;
+}
+
+/* 按钮圆润 */
+.el-button {
+  border-radius: 8px;
+}
+.el-button--large {
+  border-radius: 10px;
+}
+
+/* 输入框 / 文本域圆润 */
+.el-input__wrapper,
+.el-textarea__inner {
+  border-radius: 8px;
+}
+
+/* 下拉选择器圆润 */
+.el-select__wrapper {
+  border-radius: 8px;
+}
+
+/* 日期选择器圆润 */
+.el-date-editor {
+  border-radius: 8px;
+}
+
+/* 弹窗圆润 */
+.el-dialog {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.el-dialog__header {
+  padding: 18px 20px 8px;
+}
+
+/* 消息提示圆润 */
+.el-message {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 通知圆润 */
+.el-notification {
+  border-radius: 12px;
+}
+
+/* 标签圆润 */
+.el-tag {
+  border-radius: 6px;
+}
+
+/* 表格圆润 */
+.el-table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 分页按钮圆润 */
+.el-pagination .el-pager li {
+  border-radius: 6px;
+}
+
+/* 抽屉圆润 */
+.el-drawer {
+  border-radius: 16px 0 0 16px;
+}
+
+/* 下拉菜单圆润 */
+.el-popper {
+  border-radius: 10px;
+}
+
+/* 开关圆润 */
+.el-switch {
+  --el-switch-on-color: #409eff;
+}
+
+/* 树控件圆润 */
+.el-tree-node__content {
+  border-radius: 6px;
+}
+
+/* 表格头部圆角细节 */
+.el-table th.el-table__cell {
+  background: #fafafa;
+}
